@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Buddy - Responsive</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header id="main-header">
+        <div class="logo">
+            <img src="./assets/Logo(1).png" alt="logo">
+        </div>
+        
+        <nav class="desktop-nav">
+            <ul class="classList">
+                <li><a href="#" class="navText">Home</a></li>
+                <li><a href="#" class="navText">About</a></li>
+                <li><a href="#" class="navText">Packages</a></li>
+                <li><a href="#" class="navText">Places</a></li>
+                <li><a href="#" class="navText">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <button class="btnNav desktop-btn">Book Now</button>
+        <div class="burger-menu" id="burger-menu">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+        </div>
+    </header>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="#" class="navText">Home</a></li>
+            <li><a href="#" class="navText">About</a></li>
+            <li><a href="#" class="navText">Packages</a></li>
+            <li><a href="#" class="navText">Places</a></li>
+            <li><a href="#" class="navText">Contact</a></li>
+        </ul>
+        <button class="btnNav mobile-btn">Book Now</button>
+    </nav>
+
+    <section class="baneri">
+        <div class="divi">
+            <div class="satauri">
+                <h1 class="Satauri">Travel Buddy</h1>
+                <h6 class="SatauriSub">Let's start your journey with us, your dream will come true</h6>
+            </div>
+            <button class="btnNav">Discover Now</button>
+        </div>
+    </section>
+
+    <section class="seqcia">
+        <div class="Subtitle">
+            <h2 class="H2Satauri">Top Places to visit</h2>
+            <h6 class="H6satauri">The Best Place to Stay in Indonesia</h6>
+        </div>
+        <div class="imggaleria">
+            <div class="subimg">
+                <img src="./assets/img-box-place(1).png" alt="img">
+                <img src="./assets/img-box-place(2).png" alt="img">
+            </div>
+            <div class="subimg">
+                <img src="./assets/img-box-place(3).png" alt="img">
+                <img src="./assets/img-box-place.png" alt="img">
+            </div>
+        </div>
+        <button class="btnNav">Discover More</button>
+    </section>
+
+    <section class="registerseqcia">
+        <div class="container">
+            <div class="form-box">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Gmail" required pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$" title="Please enter a valid Gmail address">
+                    <div class="password-container">
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button type="button" onclick="togglePassword()">Show</button>
+                    </div>
+                    <button type="submit">Plan Details</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="top-hotels">
+        <div class="container">
+            <div class="Subtitle">
+                <h2 class="H2Satauri">Top Hotels</h2>
+                <h6 class="H6satauri">The Best Place to Stay in Indonesia</h6>
+            </div>
+            <div class="hotel-cards">
+                <div class="card">
+                    <img src="./assets/img-card-hotel-03(3).png" alt="Hotel Grand Indonesia" />
+                    <h3>Hotel Grand Indonesia</h3>
+                    <p class="stars">
+                        <span class="star">★★★★★</span> <span class="reviews">(200 Review)</span>
+                    </p>
+                    <p class="location">Jakarta, Indonesia</p>
+                    <p class="price">From <span>Rp1.500.000,00</span></p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img-card-hotel-03(4).png" alt="Hotel Grand Indonesia" />
+                    <h3>Hotel Grand Indonesia</h3>
+                    <p class="stars">
+                        <span class="star">★★★★★</span> <span class="reviews">(200 Review)</span>
+                    </p>
+                    <p class="location">Jakarta, Indonesia</p>
+                    <p class="price">From <span>Rp1.500.000,00</span></p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/img-card-hotel-03(5).png" alt="Hotel Grand Indonesia" />
+                    <h3>Hotel Grand Indonesia</h3>
+                    <p class="stars">
+                        <span class="star">★★★★★</span> <span class="reviews">(200 Review)</span>
+                    </p>
+                    <p class="location">Jakarta, Indonesia</p>
+                    <p class="price">From <span>Rp1.500.000,00</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./assets/Logo(1).png" alt="Travel Buddy Logo" class="logo-img" />
+                <h2>Travel Buddy</h2>
+            </div>
+
+            <div class="footer-links">
+                <h3>DISCOVER DESTINATION</h3>
+                <ul>
+                    <li><a href="#">Bali</a></li>
+                    <li><a href="#">Karimun Jawa</a></li>
+                    <li><a href="#">Jepara</a></li>
+                    <li><a href="#">Lombok</a></li>
+                    <li><a href="#">Yogyakarta</a></li>
+                    <li><a href="#">Flores</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-contact">
+                <h3>CONTACT US</h3>
+                <p>24 Shipley St. Arvada, CO 80003</p>
+                <p>09378493810</p>
+                <p>TravelBuddy@gmail.com</p>
+              
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Copyright 2022 TravelBuddy</p>
+        </div>
+    </footer>
+
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <button id="accept-cookies">Accept</button>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
